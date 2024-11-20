@@ -647,7 +647,7 @@ The first 25 sites from a $B = 2^{8} * 3^{5}$ Halton Frame ($62,208$ grid points
 
 ```{r HFex1e, message=FALSE, warning=FALSE}
 n_samples <- 25
-FrameSample <-getSample(shapefile = Frame, 
+FrameSample <- getSample(shapefile = Frame, 
                         n = n_samples)
 FrameSample <- FrameSample$sample
 FrameSample[1:10, c("x", "spbalSeqID")]
