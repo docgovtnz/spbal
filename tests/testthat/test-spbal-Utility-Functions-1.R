@@ -34,8 +34,7 @@ testthat::test_that("4. Ensure seeds are random for BAS - testing setBASSeed()."
   set.seed(234)
   res <- NULL
   for( i in 1:1000 ){
-    seed <- setBASSeed(shp, bb, n = 1)
-    res <- rbind(res, setBASSeed(shp, bb, n = 1))
+    res <- rbind(res, findBASSeed(shp, bb, n = 1))
   }
   duplicates <- which(duplicated(res))
 
